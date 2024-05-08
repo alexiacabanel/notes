@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
-}
+/* styles.css */
+@import '~bootstrap/dist/css/bootstrap.min.css';
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.sidebar {
+  width: 20%;
+  background-color: #f0f0f0;
+  padding: 20px;
+  overflow-y: scroll;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.note-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.note-list li {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.main-content {
+  width: 80%;
+  padding: 20px;
+}
+
+.content-wrapper {
+  display: flex;
+}
+
+/* App.css */
+body {
+  background-color: #333; /* Fond gris foncé */
+  color: white; /* Couleur du texte blanc */
+}
+
+.sidebar {
+  float: left;
+  width: 400px;
+  height: 100%;
+  background-color: #222; /* Fond gris plus foncé */
+  border-right: 1px solid white; /* Ligne blanche séparatrice */
+}
+
+.main-content {
+  margin-left: 200px; /* Pour compenser la largeur de la sidebar */
+}
+
+button {
+  background-color: red; /* Boutons rouges */
+  width: 320px;
+  color: white; /* Texte blanc */
+  border: none;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.note-list li {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.note-list li:hover {
+  background-color: #444; /* Couleur de fond au survol */
 }
